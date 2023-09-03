@@ -1,4 +1,4 @@
-# 🎧 Maxaudio - Your Ultimate Headphone Destination 🎶
+# 🎧 Maxaudio - Your Ultimate Headphone Destination🎶
 
 ## 🔧 Built with:
 - HTML5 for structure.
