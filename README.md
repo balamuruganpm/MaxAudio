@@ -1,12 +1,13 @@
 # 🎧 Maxaudio - Your Ultimate Headphone Destination 🎶
 
-🌐 Visit the Website: <a href=""><img src="livepreview.png" width="50" height="50"></a>
-
 ## 🔧 Built with:
 - HTML5 for structure.
 - CSS3 for elegant styling.
 - JavaScript for interactive elements.
   
+### LIVE PREVIEW 🌩⚡
+<a href=""><img src="livepreview.png" width="70" height="70"></a>
+
 ## Projects
 
 > ### [List Of Projects](https://github.com/Balamuruganpm/MyAllProjects)
