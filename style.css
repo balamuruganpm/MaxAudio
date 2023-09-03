@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: 'Lato';
+    background-color: #537895;
+    color: white;
+    background-image: linear-gradient(to right top, #051937, #10172e, #141625, #15151c, #141414);
+}
+
+/* naav */
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo a img {
+    width: 60%;
+    height: 80%;
+}
+
+.cart {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* main content */
+
+main {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* 1st left side headset lists */
+
+.headset-list {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headsets {
+    width: 70px;
+    height: 70px;
+    background-color: lightblue;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    animation: nameout 2s ease;
+}
+
+.headsets img {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+}
+
+.headsets img:hover {
+    filter: drop-shadow(3px 3px 20px lightblue);
+}
+
+/* 2nd screen here */
+
+.headset-details {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* middle headset */
+
+.headset {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headset img {
+    width: 100%;
+    height: 90%;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 30px black);
+    animation: nameout 2s ease;
+}
+
+/* last headset details */
+
+.details {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes nameout {
+    from {
+        margin-left: 30%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.headset-name {
+    width: 100%;
+    height: 30%;
+    animation: nameout 2s ease;
+}
+
+.headset-name h2 {
+    font-size: 2.7rem;
+    line-height: 4rem;
+}
+
+.headset-name p {
+    font-size: medium;
+    padding-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.headset-rate {
+    width: 100%;
+    height: 10%;
+    animation: nameout 2s ease;
+}
+
+.headset-rate p {
+    width: 10px;
+    font-size: 3rem;
+}
+
+.buy-btn {
+    width: 100%;
+    height: 20%;
+    animation: nameout 2s ease;
+}
+
+.buy-btn p {
+    font-size: 1.5rem;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* large laptop viewpoint */
+
+@media (min-width: 1440px) {
+
+    .headset-list {
+        width: 10%;
+    }
+
+    .headsets {
+        width: 90px;
+        height: 90px;
+    }
+
+    .headset {
+        width: 70%;
+    }
+
+    .details {
+        width: 40%;
+    }
+
+    .headset-name h2 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .headset-name p {
+        font-size: 20px;
+        padding-top: 2%;
+    }
+
+    .headset-rate p {
+        font-size: 4rem;
+    }
+
+    .buy-btn {
+        margin-top: 20px;
+    }
+
+    .buy-btn p {
+        font-size: 1.5rem;
+        width: 190px;
+        height: 60px;
+        border: 2px solid white;
+    }
+
+}
+
+/* tablet viewpoint */
+
+@media (max-width: 768px) {
+
+    .logo a img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .headset-list {
+        width: 10%;
+    }
+
+    .headsets {
+        width: 60px;
+        height: 60px;
+    }
+
+    .headset {
+        width: 70%;
+    }
+
+    .details {
+        width: 40%;
+    }
+
+    .headset-name h2 {
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .headset-name p {
+        font-size: 13px;
+        padding-top: 2%;
+    }
+
+    .headset-rate p {
+        font-size: 2.5rem;
+    }
+
+}
+
+/* large mobile viewpoint */
+
+@media (max-width: 425px) {
+    
+.logo a img {
+    width: 80%;
+    height: 80%;
+}
+
+    .headsets {
+        width: 60px;
+        height: 60px;
+    }
+
+    .headset-details {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headset {
+        width: 100%;
+        height: 100%;
+    }
+
+    .details {
+        width: 50%;
+        height: 50%;
+        justify-content: start;
+    }
+
+    .headset-name h2 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .headset-name p {
+        font-size: 12px;
+    }
+
+    .headset-rate p {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    .buy-btn {
+        width: 100%;
+        height: 20%;
+    }
+
+    .buy-btn p {
+        width: 90px;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid white;
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+}
+
+/* small mobile viewpoint */
+
+@media (max-width: 320px) {
+
+    .logo a img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .headsets {
+        width: 50px;
+        height: 50px;
+    }
+
+    .headset {
+        height: 70%;
+    }
+
+    .headset img {
+        height: fit-content;
+    }
+
+    .headset-name h2 {
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+    }
+
+    .headset-name p {
+        font-size: 10px;
+    }
+
+}

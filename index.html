@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SharkAudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#"><img src="logo.png" alt="logo"></a>
+        </div>
+        <div class="cart">
+            <img src="cart.png" alt="checkout" width="20" height="20">
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1st left side headset lists -->
+
+        <div class="headset-list">
+            <div class="headsets">
+                <img src="blue-headset.png" alt="blue-headset" onclick="imagechange()">
+            </div>
+            <div class="headsets">
+                <img src="red-headset.png" alt="red-headset" onclick="imagechange()">
+            </div>
+        </div>
+
+        <!-- 2nd side headset lists -->
+
+        <div class="headset-details">
+            <!-- middle headset -->
+
+            <div class="headset">
+                <img src="blue-headset.png" alt="blue-headset" id="headset-img">
+            </div>
+
+            <!-- last headset details -->
+
+            <div class="details">
+                <div class="headset-name">
+                    <h2>WIRELESS HEADPHONES</h2>
+                    <p>The SMART way to listen</p>
+                </div>
+                <div class="headset-rate">
+                    <p>$199</p>
+                </div>
+                <div class="buy-btn">
+                    <p>Shop Now</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script>
+        var headsetImg = document.getElementById('headset-img');
+        var isBlue = true;
+        function imagechange() {
+            // Toggle the image source
+            if (isBlue) {
+                headsetImg.setAttribute('src', 'red-headset.png');
+                isBlue = false;
+            } else {
+                headsetImg.setAttribute('src', 'blue-headset.png');
+                isBlue = true;
+            }
+        }
+    </script>
+    
+</body>
+
+</html>
