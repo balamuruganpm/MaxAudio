@@ -8,7 +8,9 @@
 </head>
 
 <body>
-
+    <div id="loader">
+        <img src="" alt="loading">
+    </div>
     <header>
         <div class="logo">
             <a href="#"><img src="logo.png" alt="logo"></a>
@@ -71,6 +73,21 @@
                 isBlue = true;
             }
         }
+
+        document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+            "body").style.visibility = "hidden";
+        document.querySelector(
+            "#loader").style.visibility = "visible";
+    } else {
+        document.querySelector(
+            // change the name
+            "#loader").style.display = "none";
+        document.querySelector(
+            "body").style.visibility = "visible";
+    }
+};
     </script>
     
 </body>
