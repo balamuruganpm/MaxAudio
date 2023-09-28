@@ -44,12 +44,6 @@ header {
     cursor: pointer;
 }
 
-#loader {
-    position: relative;
-    top: 50%;
-    left: 50%;
-}
-
 /* main content */
 
 main {
