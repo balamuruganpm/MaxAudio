@@ -6,7 +6,7 @@
 - JavaScript for interactive elements.
   
 ### LIVE PREVIEW 🌩⚡
-<a href="https://balamuruganpm.github.io/MaxAudio/"><img src="livepreview.png" width="70" height="70"></a>
+<a href="https://selfie-bd.github.io/Max_Audio/"><img src="livepreview.png" width="70" height="70"></a>
 
 ## Projects
 
